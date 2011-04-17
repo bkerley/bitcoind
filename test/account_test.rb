@@ -36,5 +36,44 @@ class AccountTest < Test::Unit::TestCase
 
       assert_equal 'testaddress', @address
     end
+
+    should 'have a list of transactions' do
+      @client.expects(:request).
+        once.
+        with('listtransactions', 'pi').
+        returns [
+                 {
+                   'account'=>'pi',
+                   'address'=>'testaddress',
+                   'category'=>'receive',
+                   'amount'=>3.10,
+                   'confirmations'=>310,
+                   'txid'=>'310',
+                   'time'=>1234567310
+                 },
+                 {
+                   'account'=>'pi',
+                   'address'=>'testaddress',
+                   'category'=>'receive',
+                   'amount'=>3.11,
+                   'confirmations'=>311,
+                   'txid'=>'311',
+                   'time'=>1234567311
+                 },
+                 {
+                   'account'=>'pi',
+                   'address'=>'testaddress',
+                   'category'=>'receive',
+                   'amount'=>3.12,
+                   'confirmations'=>312,
+                   'txid'=>'312',
+                   'time'=>1234567312
+                 },
+                ]
+
+      @txns = @acc.transactions
+
+      assert_equal ['310', '311', '312'], @txns.map(&:id)
+    end
   end
 end
