@@ -73,6 +73,9 @@ class AccountTest < Test::Unit::TestCase
 
       @txns = @acc.transactions
 
+      @txns.each do |t|
+        assert_kind_of Bitcoind::Transaction, t
+      end
       assert_equal ['310', '311', '312'], @txns.map(&:id)
     end
   end
