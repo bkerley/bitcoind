@@ -1,0 +1,3 @@
+module Bitcoind
+  # Your code goes here...
+end
