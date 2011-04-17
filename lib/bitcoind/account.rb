@@ -8,6 +8,10 @@ module Bitcoind
       self.name = name
     end
 
+    def inspect
+      "#<Bitcoind::Account #{self.name.inspect} >"
+    end
+
     def balance
       @client.request 'getbalance', self.name
     end

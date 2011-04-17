@@ -20,5 +20,9 @@ module Bitcoind
       response = JSON.parse response_json
       return response['result']
     end
+
+    def inspect
+      "#<Bitcoind::Client #{@endpoint.inspect} >"
+    end
   end
 end

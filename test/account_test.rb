@@ -11,6 +11,10 @@ class AccountTest < Test::Unit::TestCase
       assert_equal 'pi', @acc.name
     end
 
+    should 'have a short but useful inspect' do
+      assert_equal "#<Bitcoind::Account \"pi\" >", @acc.inspect
+    end
+
     should 'ask the client for a balance' do
       @client.expects(:request).
         once.

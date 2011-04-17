@@ -6,6 +6,10 @@ class ClientTest < Test::Unit::TestCase
       @bcd = Bitcoind.new 'testuser', 'testpass'
     end
 
+    should 'have a simple and useful inspect' do
+      assert_equal "#<Bitcoind::Client \"http://testuser:testpass@localhost:8332\" >", @bcd.inspect
+    end
+
     context 'balance operation' do
       setup do
         RestClient.expects(:post).
