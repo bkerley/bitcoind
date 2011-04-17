@@ -21,5 +21,13 @@ module Bitcoind
       @client.request 'getaccountaddress', self.name
     end
     memoize :address
+
+    def transactions
+      txn_array = @client.request 'listtransactions', self.name
+
+      txn_array.map do |h|
+        Transaction.new @client, self, h['txid']
+      end
+    end
   end
 end
