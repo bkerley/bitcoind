@@ -1,7 +1,7 @@
 require 'json'
 require 'rest_client'
 
-%w{ client }.each do |f|
+%w{ client account }.each do |f|
   require File.join(File.dirname(__FILE__), 'bitcoind', f)
 end
 
