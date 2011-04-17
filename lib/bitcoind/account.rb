@@ -1,9 +1,21 @@
 module Bitcoind
   class Account
-    attr_accessor :name, :balance, :address
-    def initialize(name, balance)
+    extend ActiveSupport::Memoizable
+    attr_accessor :name, :balance
+
+    def initialize(client, name)
+      @client = client
       self.name = name
-      self.balance = balance
     end
+
+    def balance
+      @client.request 'getbalance', self.name
+    end
+    memoize :balance
+
+    def address
+      @client.request 'getaccountaddress', self.name
+    end
+    memoize :address
   end
 end

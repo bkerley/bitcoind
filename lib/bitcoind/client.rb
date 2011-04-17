@@ -12,7 +12,7 @@ module Bitcoind
       balance_hash = request 'listaccounts'
       account_hash = { }
       balance_hash.each do |n, b|
-        account_hash[n] = Account.new n, b
+        account_hash[n] = Account.new self, n
       end
       account_hash
     end

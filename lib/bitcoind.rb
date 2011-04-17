@@ -1,5 +1,6 @@
 require 'json'
 require 'rest_client'
+require 'active_support/memoizable'
 
 %w{ client account }.each do |f|
   require File.join(File.dirname(__FILE__), 'bitcoind', f)

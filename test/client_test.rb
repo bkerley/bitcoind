@@ -40,7 +40,7 @@ class ClientTest < Test::Unit::TestCase
           assert_equal k, a.name
         end
 
-        assert_equal 3.14, @result['pi'].balance
+        assert_equal 'pi', @result['pi'].name
       end
     end
   end
