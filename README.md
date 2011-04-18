@@ -8,38 +8,47 @@ Before connecting, you will need to configure a username and password for `bitco
 `bitcoind`. Once that's done:
 
     client = Bitcoind.new 'username', 'password'
+      # => #<Bitcoind::Client "http://username:password@localhost:8332" >
 
 ## Account Balances
 
 You can get the balance of all addresses controlled by the client:
 
-    client.balance # => 12.34
+    client.balance
+      # => 12.34
 
 You can also get a hash of all "accounts" the client controls:
 
-    client.accounts # => {"Your Address"=>#<Bitcoind::Account "Your Address" >, "eve-online ransoms"=>#<Bitcoind::Account "eve-online ransoms" >}
+    client.accounts
+      # => {"Your Address"=>#<Bitcoind::Account "Your Address" >, "eve-online ransoms"=>#<Bitcoind::Account "eve-online ransoms" >}
 
 And of course each account has its own balance too:
 
-    ransom = client.accounts['eve-online ransoms'] # => #<Bitcoind::Account "eve-online ransoms" >
-    ransom.balance # => 2.19
+    ransom = client.accounts['eve-online ransoms']
+      # => #<Bitcoind::Account "eve-online ransoms" >
+    ransom.balance
+      # => 2.19
 
 ## Transactions
 
 You can get all the transactions in an account:
 
-    ransom.transactions # => [#<Bitcoind::Transaction abadbabe123deadbeef 2.19 to eve-online ransoms at 2011-02-19 16:21:09 -0500>]
+    ransom.transactions
+      # => [#<Bitcoind::Transaction abadbabe123deadbeef 2.19 to eve-online ransoms at 2011-02-19 16:21:09 -0500>]
 
 You can send money from an account too:
 
-    ransom.send_to 'destinationaddress', 2 # => #<Bitcoind::Account deadbeef888abadbeef UNCONFIRMED>
+    ransom.send_to 'destinationaddress', 2
+      # => #<Bitcoind::Account deadbeef888abadbeef UNCONFIRMED>
 
 ## Making Accounts
 
 Creating an account with an associated address is done through the accounts interface:
 
-    tiny_wings = client.accounts.new 'tiny wings ransoms' # => #<Bitcoind::Account "tiny wings ransoms" >
-    tiny_wings.address # => "1KV5khnHbbHF2nNQkk7Pe5nPndEj43U27r"
+    tiny_wings = client.accounts.new 'tiny wings ransoms'
+      # => #<Bitcoind::Account "tiny wings ransoms" >
+    tiny_wings.address
+      # => "1KV5khnHbbHF2nNQkk7Pe5nPndEj43U27r"
 
 # Contributing
 
