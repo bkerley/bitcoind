@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
   s.name        = "bitcoind"
   s.version     = Bitcoind::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
+  s.authors     = ["Bryce Kerley"]
+  s.email       = ["bkerley@brycekerley.net"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Control the bitcoin nework client over JSON-RPC.}
+  s.description = %q{Automate your Bitcoin transactions with this Ruby interface to the bitcoind JSON-RPC API.}
 
   s.rubyforge_project = "bitcoind"
 
