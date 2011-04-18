@@ -8,19 +8,24 @@ class TransactionTest < Test::Unit::TestCase
       @txn = Bitcoind::Transaction.new @client, @acc, 'testtxnid'
     end
 
-    should 'have an amount' do
-      @client.expects(:request).
-        once.
-        with('gettransaction', 'testtxnid').
-        returns('amount'=>3.14, 'confirmations'=>420, 'txid'=>'testtxnid',
-                'time'=>1234567890, 'details'=>{
-                  'account'=> 'pi',
-                  'address'=>'testaddress',
-                  'category'=>'receive',
-                  'amount'=>3.14
-                })
-
-      assert_equal 3.14, @txn.amount
+    context 'with a detail_hash' do
+      setup do
+        @client.expects(:request).
+          once.
+          with('gettransaction', 'testtxnid').
+          returns('amount'=>3.14, 'confirmations'=>420, 'txid'=>'testtxnid',
+                  'time'=>1234567890, 'details'=>{
+                    'account'=> 'pi',
+                    'address'=>'testaddress',
+                    'category'=>'receive',
+                    'amount'=>3.14
+                  })
+      end
+      should 'have an amount, confirmations, time' do
+        assert_equal 3.14, @txn.amount
+        assert_equal 420, @txn.confirmations
+        assert_equal Time.at(1234567890), @txn.time
+      end
     end
   end
 end
