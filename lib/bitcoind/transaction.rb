@@ -24,12 +24,16 @@ module Bitcoind
     end
 
     def confirmations
-      detail_hash['confirmations']
+      detail_hash['confirmations'] rescue 0
     end
 
     def time
       Time.at detail_hash['time']
     end
     memoize :time
+
+    def confirmed?
+      confirmations > 6
+    end
   end
 end
