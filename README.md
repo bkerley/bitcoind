@@ -26,9 +26,13 @@ And of course each account has its own balance too:
 
 ## Transactions
 
-You can get all the transactions in an account too:
+You can get all the transactions in an account:
 
     ransom.transactions # => [#<Bitcoind::Transaction abadbabe123deadbeef 2.19 to eve-online ransoms at 2011-02-19 16:21:09 -0500>]
+
+You can send money from an account too:
+
+    ransom.send_to 'destinationaddress', 2 # => #<Bitcoind::Account deadbeef888abadbeef UNCONFIRMED>
 
 ## Making Accounts
 
