@@ -13,8 +13,21 @@ module Bitcoind
     end
     memoize :detail_hash
 
+    def inspect
+      "#<Bitcoind::Transaction #{id} #{amount} to #{account.name} at #{time}>"
+    end
+
     def amount
       detail_hash['amount']
     end
+
+    def confirmations
+      detail_hash['confirmations']
+    end
+
+    def time
+      Time.at detail_hash['time']
+    end
+    memoize :time
   end
 end
