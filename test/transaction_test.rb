@@ -36,7 +36,7 @@ class TransactionTest < Test::Unit::TestCase
     context 'without a detail_hash' do
       setup do
         @client.expects(:request).
-          once.
+          at_least_once.
           with('gettransaction', 'testtxnid').
           raises(RestClient::InternalServerError)
       end
