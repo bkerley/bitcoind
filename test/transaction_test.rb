@@ -27,5 +27,18 @@ class TransactionTest < Test::Unit::TestCase
         assert_equal Time.at(1234567890), @txn.time
       end
     end
+
+    context 'without a detail_hash' do
+      setup do
+        @client.expects(:request).
+          once.
+          with('gettransaction', 'testtxnid').
+          raises(RestClient::InternalServerError)
+      end
+
+      should 'have a sane inspect' do
+        assert_equal "#<Bitcoind::Transaction testtxnid UNCONFIRMED>", @txn.inspect
+      end
+    end
   end
 end
