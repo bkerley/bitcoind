@@ -21,10 +21,15 @@ class TransactionTest < Test::Unit::TestCase
                     'amount'=>3.14
                   })
       end
-      should 'have an amount, confirmations, time' do
+
+      should 'have an amount and time' do
         assert_equal 3.14, @txn.amount
-        assert_equal 420, @txn.confirmations
         assert_equal Time.at(1234567890), @txn.time
+      end
+
+      should 'have confirmations and be confirmed' do
+        assert_equal 420, @txn.confirmations
+        assert @txn.confirmed?
       end
     end
 
