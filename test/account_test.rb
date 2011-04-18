@@ -78,5 +78,18 @@ class AccountTest < Test::Unit::TestCase
       end
       assert_equal ['310', '311', '312'], @txns.map(&:id)
     end
+
+    context 'transactions' do
+      should 'send money' do
+        @client.expects(:request).
+          once.
+          with('sendfrom', @acc.name, 'testdestinationaddress', 5).
+          returns('sentmoneytransactionid')
+
+        @txn = @acc.send_to('testdestinationaddress', 5)
+
+        assert_equal 'sentmoneytransactionid', @txn.id
+      end
+    end
   end
 end
