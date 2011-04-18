@@ -1,6 +1,6 @@
 # Bitcoind
 
-Operating the `bitcoind` JSON-RPC API from Ruby.
+Automate your [Bitcoin](http://bitcoin.org/) transactions with this Ruby interface to the `bitcoind` JSON-RPC API.
 
 ## Connecting
 
@@ -17,7 +17,7 @@ You can get the balance of all addresses controlled by the client:
     client.balance
       # => 12.34
 
-You can also get a hash of all "accounts" the client controls:
+You can also get a hash of all accounts the client controls:
 
     client.accounts
       # => {"Your Address"=>#<Bitcoind::Account "Your Address" >, "eve-online ransoms"=>#<Bitcoind::Account "eve-online ransoms" >}
