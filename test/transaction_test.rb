@@ -39,6 +39,11 @@ class TransactionTest < Test::Unit::TestCase
       should 'have a sane inspect' do
         assert_equal "#<Bitcoind::Transaction testtxnid UNCONFIRMED>", @txn.inspect
       end
+
+      should 'have zero confirmations and be unconfirmed' do
+        assert_equal 0, @txn.confirmations
+        assert !@txn.confirmed?
+      end
     end
   end
 end
