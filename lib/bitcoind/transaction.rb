@@ -15,6 +15,8 @@ module Bitcoind
 
     def inspect
       "#<Bitcoind::Transaction #{id} #{amount} to #{account.name} at #{time}>"
+    rescue RestClient::InternalServerError
+      "#<Bitcoind::Transaction #{id} UNCONFIRMED>"
     end
 
     def amount
