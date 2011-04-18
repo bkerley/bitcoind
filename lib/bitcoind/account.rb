@@ -12,6 +12,11 @@ module Bitcoind
       "#<Bitcoind::Account #{self.name.inspect} >"
     end
 
+    def send_to(destination, amount)
+      txn_id = @client.request 'sendfrom', self.name, destination, amount
+      Transaction.new @clientm, self, txn_id
+    end
+
     def balance
       @client.request 'getbalance', self.name
     end
