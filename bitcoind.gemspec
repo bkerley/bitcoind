@@ -1,18 +1,18 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "bitcoind/version"
+require "bitcoind-client/version"
 
 Gem::Specification.new do |s|
-  s.name        = "bitcoind"
-  s.version     = Bitcoind::VERSION
+  s.name        = "bitcoind-client"
+  s.version     = Bitcoind-client::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Bryce Kerley"]
-  s.email       = ["bkerley@brycekerley.net"]
-  s.homepage    = ""
+  s.authors     = ["Bryce Kerley", "Celso Cardoso"]
+  s.email       = ["celso.pitta@gmail.com"]
+  s.homepage    = "https://github.com/celsopitta/bitcoind-client"
   s.summary     = %q{Control the bitcoin nework client over JSON-RPC.}
   s.description = %q{Automate your Bitcoin transactions with this Ruby interface to the bitcoind JSON-RPC API.}
 
-  s.rubyforge_project = "bitcoind"
+  s.rubyforge_project = "bitcoind-client"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
