@@ -1,4 +1,4 @@
-module Bitcoind
+module BitcoindClient
   class Client
     def initialize(user, pass)
       @endpoint = "http://#{user}:#{pass}@localhost:8332"
@@ -22,7 +22,7 @@ module Bitcoind
     end
 
     def inspect
-      "#<Bitcoind::Client #{@endpoint.inspect} >"
+      "#<BitcoindClient::Client #{@endpoint.inspect} >"
     end
   end
 end

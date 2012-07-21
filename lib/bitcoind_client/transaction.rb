@@ -1,4 +1,4 @@
-module Bitcoind
+module BitcoindClient
   class Transaction
     extend ActiveSupport::Memoizable
     attr_accessor :id, :account
@@ -14,9 +14,9 @@ module Bitcoind
     memoize :detail_hash
 
     def inspect
-      "#<Bitcoind::Transaction #{id} #{amount} to #{account.name} at #{time}>"
+      "#<BitcoindClient::Transaction #{id} #{amount} to #{account.name} at #{time}>"
     rescue RestClient::InternalServerError
-      "#<Bitcoind::Transaction #{id} UNCONFIRMED>"
+      "#<BitcoindClient::Transaction #{id} UNCONFIRMED>"
     end
 
     def amount

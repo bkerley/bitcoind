@@ -4,8 +4,8 @@ class TransactionTest < Test::Unit::TestCase
   context 'a transaction' do
     setup do
       @client = stub
-      @acc = Bitcoind::Account.new @client, 'pi'
-      @txn = Bitcoind::Transaction.new @client, @acc, 'testtxnid'
+      @acc = BitcoindClient::Account.new @client, 'pi'
+      @txn = BitcoindClient::Transaction.new @client, @acc, 'testtxnid'
     end
 
     context 'with a detail_hash' do
@@ -42,7 +42,7 @@ class TransactionTest < Test::Unit::TestCase
       end
 
       should 'have a sane inspect' do
-        assert_equal "#<Bitcoind::Transaction testtxnid UNCONFIRMED>", @txn.inspect
+        assert_equal "#<BitcoindClient::Transaction testtxnid UNCONFIRMED>", @txn.inspect
       end
 
       should 'have zero confirmations and be unconfirmed' do

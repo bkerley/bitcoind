@@ -3,11 +3,11 @@ require 'helper'
 class ClientTest < Test::Unit::TestCase
   context 'a Bitcoind client' do
     setup do
-      @bcd = Bitcoind.new 'testuser', 'testpass'
+      @bcd = BitcoindClient.new 'testuser', 'testpass'
     end
 
     should 'have a simple and useful inspect' do
-      assert_equal "#<Bitcoind::Client \"http://testuser:testpass@localhost:8332\" >", @bcd.inspect
+      assert_equal "#<BitcoindClient::Client \"http://testuser:testpass@localhost:8332\" >", @bcd.inspect
     end
 
     context 'balance operation' do
@@ -40,7 +40,7 @@ class ClientTest < Test::Unit::TestCase
         @result = @bcd.accounts
         assert_kind_of Hash, @result
         @result.each do |k, a|
-          assert_kind_of Bitcoind::Account, a
+          assert_kind_of BitcoindClient::Account, a
           assert_equal k, a.name
         end
 
