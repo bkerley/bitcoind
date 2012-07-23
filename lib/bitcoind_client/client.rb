@@ -8,9 +8,9 @@ module BitcoindClient
       request 'getbalance'
     end
 
-    def move(fromaccount, toaccount, amount, minconf=1, comment)
+    def move(fromaccount, toaccount, amount, minconf=1)
 
-      request 'move', fromaccount, toaccount, amount, minconf.to_i, comment
+      request 'move', fromaccount, toaccount, amount, minconf.to_i
     end
 
     def accounts

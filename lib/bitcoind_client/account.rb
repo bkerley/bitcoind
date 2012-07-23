@@ -12,13 +12,13 @@ module BitcoindClient
       "#<BitcoindClient::Account #{self.name.inspect} >"
     end
 
-    def send_to(bitcoinaddress, amount, minconf=1, comment)
-      txn_id = @client.request 'sendfrom', self.name, bitcoinaddress, amount, minconf.to_i, comment
+    def send_to(bitcoinaddress, amount, minconf=1)
+      txn_id = @client.request 'sendfrom', self.name, bitcoinaddress, amount, minconf.to_i
       Transaction.new @clientm, self, txn_id
     end
 
-    def move_to(toaccount, amount, minconf=1, comment)
-      @client.move self.name, toaccount, amount, minconf.to_i, comment
+    def move_to(toaccount, amount, minconf=1)
+      @client.move self.name, toaccount, amount, minconf.to_i
     end
 
     def balance(minconf = 1)
