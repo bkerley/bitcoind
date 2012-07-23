@@ -1,6 +1,6 @@
 module BitcoindClient
   class Account
-    extend ActiveSupport::Memoizable
+
     attr_accessor :name, :balance
 
     def initialize(client, name)
@@ -12,20 +12,24 @@ module BitcoindClient
       "#<BitcoindClient::Account #{self.name.inspect} >"
     end
 
-    def send_to(destination, amount)
-      txn_id = @client.request 'sendfrom', self.name, destination, amount
+    def send_to(bitcoinaddress, amount, minconf=1, comment)
+      txn_id = @client.request 'sendfrom', self.name, bitcoinaddress, amount, minconf.to_i, comment
       Transaction.new @clientm, self, txn_id
     end
 
-    def balance
-      @client.request 'getbalance', self.name
+    def move_to(toaccount, amount, minconf=1, comment)
+      @client.move self.name, toaccount, amount, minconf.to_i, comment
     end
-    memoize :balance
+
+    def balance(minconf = 1)
+      @client.request 'getbalance', self.name, minconf.to_i
+    end
+
 
     def address
       @client.request 'getaccountaddress', self.name
     end
-    memoize :address
+
 
     def transactions
       txn_array = @client.request 'listtransactions', self.name

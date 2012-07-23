@@ -1,11 +1,16 @@
 module BitcoindClient
   class Client
-    def initialize(user, pass)
-      @endpoint = "http://#{user}:#{pass}@btcjam.com:18532"
+    def initialize(user, pass, host, port)
+      @endpoint = "http://#{user}:#{pass}@#{host}:#{port}"
     end
 
     def balance
       request 'getbalance'
+    end
+
+    def move(fromaccount, toaccount, amount, minconf=1, comment)
+
+      request 'move', fromaccount, toaccount, amount, minconf.to_i, comment
     end
 
     def accounts

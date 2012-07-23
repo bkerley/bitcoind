@@ -1,6 +1,6 @@
 module BitcoindClient
   class Transaction
-    extend ActiveSupport::Memoizable
+
     attr_accessor :id, :account
     def initialize(client, account, id)
       @client = client
@@ -11,7 +11,7 @@ module BitcoindClient
     def detail_hash
       @client.request 'gettransaction', self.id
     end
-    memoize :detail_hash
+
 
     def inspect
       "#<BitcoindClient::Transaction #{id} #{amount} to #{account.name} at #{time}>"
@@ -30,7 +30,7 @@ module BitcoindClient
     def time
       Time.at detail_hash['time']
     end
-    memoize :time
+
 
     def confirmed?
       confirmations > 6
