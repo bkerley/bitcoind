@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/client.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/client.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcoind_client.gemspec" afterPath="$PROJECT_DIR$/bitcoind_client.gemspec" />
     </list>
     <ignored path="bitcoind-client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,15 +69,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rakefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bitcoind_client.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/bitcoind_client.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,10 +78,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="client.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/client.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="93" selection-start="644" selection-end="644" vertical-scroll-proportion="0.56162244">
+            <state line="24" column="93" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bitcoind_client.gemspec" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bitcoind_client.gemspec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="46" selection-start="967" selection-end="967" vertical-scroll-proportion="0.5148206">
               <folding />
             </state>
           </provider>
@@ -132,7 +131,6 @@
         <option value="$PROJECT_DIR$/bitcoind-client.gemspec" />
         <option value="$PROJECT_DIR$/lib/bitcoind.rb" />
         <option value="$PROJECT_DIR$/lib/bitcoind/account_hash.rb" />
-        <option value="$PROJECT_DIR$/bitcoind_client.gemspec" />
         <option value="$PROJECT_DIR$/lib/bitcoind_client/version.rb" />
         <option value="$PROJECT_DIR$/lib/bitcoind_client.rb" />
         <option value="$PROJECT_DIR$/lib/bitcoind_client/account.rb" />
@@ -144,12 +142,13 @@
         <option value="$PROJECT_DIR$/Guardfile" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/bitcoind_client/client.rb" />
+        <option value="$PROJECT_DIR$/bitcoind_client.gemspec" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="97" />
-    <option name="y" value="22" />
+    <option name="x" value="21" />
+    <option name="y" value="53" />
     <option name="width" value="1303" />
     <option name="height" value="787" />
   </component>
@@ -389,7 +388,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="97" y="22" width="1303" height="787" extended-state="0" />
+    <frame x="21" y="53" width="1303" height="787" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -486,11 +485,6 @@
         <state line="15" column="107" selection-start="501" selection-end="501" vertical-scroll-proportion="0.35828024" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitcoind_client.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -545,7 +539,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/client.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="93" selection-start="644" selection-end="644" vertical-scroll-proportion="0.56162244">
+        <state line="24" column="93" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcoind_client.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="46" selection-start="967" selection-end="967" vertical-scroll-proportion="0.5148206">
           <folding />
         </state>
       </provider>

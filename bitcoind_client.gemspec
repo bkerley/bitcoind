@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency 'rest-client', ['>= 1.6.7']
-  s.add_dependency 'activesupport', ['>= 3.2.6']
+  s.add_dependency 'activesupport', ['>= 3.2.3']
 
   s.add_development_dependency 'guard-test', ['>= 0.1.6']
   s.add_development_dependency 'shoulda', ['>= 2.11.3']
