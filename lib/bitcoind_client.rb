@@ -7,7 +7,7 @@ require 'rest_client'
 end
 
 module BitcoindClient
-  def self.new(user, pass)
-    return Client.new user, pass
+  def self.new(user, pass, host, port)
+    return Client.new user, pass, host, port
   end
 end

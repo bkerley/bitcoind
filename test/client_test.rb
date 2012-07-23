@@ -3,7 +3,7 @@ require 'helper'
 class ClientTest < Test::Unit::TestCase
   context 'a Bitcoind client' do
     setup do
-      @bcd = BitcoindClient.new 'testuser', 'testpass'
+      @bcd = BitcoindClient.new 'testuser', 'testpass', 'localhost', 8332
     end
 
     should 'have a simple and useful inspect' do

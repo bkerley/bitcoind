@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/account.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/account.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/client.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/client.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/transaction.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/transaction.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/version.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/version.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/client_test.rb" afterPath="$PROJECT_DIR$/test/client_test.rb" />
     </list>
     <ignored path="bitcoind-client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,15 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="client_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/client_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="54" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="account_hash_test.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/account_hash_test.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="account_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/account_test.rb">
+      <file leaf-file-name="client_test.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/client_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="66" selection-start="2314" selection-end="2314" vertical-scroll-proportion="0.0">
+            <state line="5" column="73" selection-start="177" selection-end="177" vertical-scroll-proportion="-0.94513714">
               <folding />
             </state>
           </provider>
@@ -68,7 +55,16 @@
       <file leaf-file-name="bitcoind_client.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/bitcoind_client.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
+            <state line="10" column="44" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rakefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="version.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/version.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="59" selection-start="46" selection-end="46" vertical-scroll-proportion="0.070202805">
+            <state line="3" column="59" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,17 +133,17 @@
         <option value="$PROJECT_DIR$/lib/bitcoind.rb" />
         <option value="$PROJECT_DIR$/lib/bitcoind/account_hash.rb" />
         <option value="$PROJECT_DIR$/test/account_test.rb" />
-        <option value="$PROJECT_DIR$/test/client_test.rb" />
         <option value="$PROJECT_DIR$/test/helper.rb" />
         <option value="$PROJECT_DIR$/test/transaction_test.rb" />
         <option value="$PROJECT_DIR$/Guardfile" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/bitcoind_client.gemspec" />
         <option value="$PROJECT_DIR$/lib/bitcoind_client/transaction.rb" />
-        <option value="$PROJECT_DIR$/lib/bitcoind_client.rb" />
         <option value="$PROJECT_DIR$/lib/bitcoind_client/account.rb" />
         <option value="$PROJECT_DIR$/lib/bitcoind_client/client.rb" />
         <option value="$PROJECT_DIR$/lib/bitcoind_client/version.rb" />
+        <option value="$PROJECT_DIR$/lib/bitcoind_client.rb" />
+        <option value="$PROJECT_DIR$/test/client_test.rb" />
       </list>
     </option>
   </component>
@@ -404,7 +400,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.263745" sideWeight="0.6710145" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3289855" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -485,11 +481,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="71" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0" />
@@ -498,25 +489,6 @@
     <entry file="file://$PROJECT_DIR$/test/transaction_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="38" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bitcoind_client.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/client_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="54" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/account_hash_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/account_test.rb">
@@ -561,7 +533,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/version.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="59" selection-start="46" selection-end="46" vertical-scroll-proportion="0.070202805">
+        <state line="3" column="59" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bitcoind_client.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="44" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/account_hash_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/client_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="73" selection-start="177" selection-end="177" vertical-scroll-proportion="-0.94513714">
           <folding />
         </state>
       </provider>
