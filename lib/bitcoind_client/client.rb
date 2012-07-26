@@ -21,6 +21,7 @@ module BitcoindClient
     def request(method, *args)
       body = { 'id'=>'jsonrpc', 'method'=>method}
       body['params'] = args unless args.empty?
+      puts body.to_s
       response_json = RestClient.post @endpoint, body.to_json
       response = JSON.parse response_json
       return response['result']
