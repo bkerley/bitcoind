@@ -4,7 +4,6 @@
     <list default="true" id="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/account.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/account.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/client.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/client.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/version.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/version.rb" />
     </list>
     <ignored path="bitcoind-client.iws" />
@@ -48,7 +47,7 @@
       <file leaf-file-name="client.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/client.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="66" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
+            <state line="19" column="75" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -81,10 +80,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="account.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="account.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/account.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="61" selection-start="547" selection-end="547" vertical-scroll-proportion="0.7246377">
+            <state line="16" column="29" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="version.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/version.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="18" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
+            <state line="1" column="18" selection-start="40" selection-end="40" vertical-scroll-proportion="0.034246575">
               <folding />
             </state>
           </provider>
@@ -143,17 +142,17 @@
         <option value="$PROJECT_DIR$/lib/bitcoind_client/transaction.rb" />
         <option value="$PROJECT_DIR$/lib/bitcoind_client.rb" />
         <option value="$PROJECT_DIR$/test/client_test.rb" />
-        <option value="$PROJECT_DIR$/lib/bitcoind_client/account.rb" />
         <option value="$PROJECT_DIR$/lib/bitcoind_client/client.rb" />
+        <option value="$PROJECT_DIR$/lib/bitcoind_client/account.rb" />
         <option value="$PROJECT_DIR$/lib/bitcoind_client/version.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="524" />
-    <option name="y" value="94" />
-    <option name="width" value="1303" />
-    <option name="height" value="787" />
+    <option name="x" value="97" />
+    <option name="y" value="125" />
+    <option name="width" value="1279" />
+    <option name="height" value="811" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -264,8 +263,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -391,23 +390,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="524" y="94" width="1303" height="787" extended-state="0" />
-    <editor active="false" />
+    <frame x="97" y="125" width="1279" height="811" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289855" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.263745" sideWeight="0.6710145" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3558083" sideWeight="0.6820728" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3289855" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31792718" sideWeight="0.0" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289855" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -495,23 +494,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/account_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="66" selection-start="2314" selection-end="2314" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="85" column="66" selection-start="2314" selection-end="2314" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitcoind_client.gemspec">
+    <entry file="file://$PROJECT_DIR$/test/account_hash_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="46" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="77" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/client_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="73" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/client.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="75" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/bitcoind_client.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="44" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="44" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
@@ -519,32 +522,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/client_test.rb">
+    <entry file="file://$PROJECT_DIR$/bitcoind_client.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="73" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/account_hash_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="77" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/transaction.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="71" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="22" column="46" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/account_hash.rb">
@@ -552,16 +532,21 @@
         <state line="0" column="21" selection-start="7" selection-end="21" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/client.rb">
+    <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/transaction.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="66" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="26" column="71" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/account.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="547" selection-end="547" vertical-scroll-proportion="0.7246377">
+        <state line="16" column="29" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="18" selection-start="40" selection-end="40" vertical-scroll-proportion="0.034246575">
           <folding />
         </state>
       </provider>

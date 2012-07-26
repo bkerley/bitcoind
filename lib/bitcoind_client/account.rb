@@ -14,7 +14,7 @@ module BitcoindClient
 
     def send_to(bitcoinaddress, amount, minconf=1)
       txn_id = @client.request 'sendfrom', self.name, bitcoinaddress, amount, minconf.to_i
-      Transaction.new @clientm, self, txn_id
+      Transaction.new @client, self, txn_id
     end
 
     def move_to(toaccount, amount, minconf=1)
