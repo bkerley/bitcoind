@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/bitcoind-client.iml" afterPath="$PROJECT_DIR$/.idea/bitcoind-client.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/account_hash.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/account_hash.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/client.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/client.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/version.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/version.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/account_hash_test.rb" afterPath="$PROJECT_DIR$/test/account_hash_test.rb" />
     </list>
     <ignored path="bitcoind-client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,10 +52,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bitcoind_client.gemspec" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bitcoind_client.gemspec" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bitcoind_client.gemspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="46" selection-start="967" selection-end="967" vertical-scroll-proportion="0.56278026">
+            <state line="22" column="46" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="20" selection-start="50" selection-end="50" vertical-scroll-proportion="0.21829522">
               <folding />
             </state>
           </provider>
@@ -110,15 +115,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/client.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="7" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -132,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/bitcoind.rb" />
         <option value="$PROJECT_DIR$/lib/bitcoind/account_hash.rb" />
         <option value="$PROJECT_DIR$/test/account_test.rb" />
         <option value="$PROJECT_DIR$/test/helper.rb" />
@@ -148,12 +143,13 @@
         <option value="$PROJECT_DIR$/lib/bitcoind_client/account_hash.rb" />
         <option value="$PROJECT_DIR$/lib/bitcoind_client/version.rb" />
         <option value="$PROJECT_DIR$/test/account_hash_test.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="310" />
-    <option name="y" value="108" />
+    <option name="x" value="309" />
+    <option name="y" value="107" />
     <option name="width" value="1287" />
     <option name="height" value="863" />
   </component>
@@ -385,14 +381,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="310" y="108" width="1287" height="863" extended-state="0" />
-    <editor active="false" />
+    <frame x="309" y="107" width="1287" height="863" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37872684" sideWeight="0.69190603" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37872684" sideWeight="0.69190603" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.308094" sideWeight="0.0" order="7" side_tool="true" content_ui="tabs" />
@@ -461,11 +457,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Guardfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="107" selection-start="501" selection-end="501" vertical-scroll-proportion="0.35828024" />
@@ -548,7 +539,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bitcoind_client.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="46" selection-start="967" selection-end="967" vertical-scroll-proportion="0.56278026">
+        <state line="22" column="46" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="20" selection-start="50" selection-end="50" vertical-scroll-proportion="0.21829522">
           <folding />
         </state>
       </provider>
