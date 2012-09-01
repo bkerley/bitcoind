@@ -19,7 +19,7 @@ class AccountHashTest < Test::Unit::TestCase
           with('getnewaddress', 'new test account').
           returns('xxxnewtestaddress')
 
-        @act = @ach.new 'new test account'
+        @act = @ach.new_account 'new test account'
         assert_equal 'new test account', @act.name
       end
     end

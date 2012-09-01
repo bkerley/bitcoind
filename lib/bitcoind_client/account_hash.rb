@@ -7,7 +7,7 @@ module BitcoindClient
       end
     end
 
-    def new(name)
+    def new_account(name)
       addr = @client.request 'getnewaddress', name
 
       self[name] = Account.new @client, name
