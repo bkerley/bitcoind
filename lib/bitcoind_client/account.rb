@@ -21,6 +21,7 @@ module BitcoindClient
       @client.move self.name, toaccount, amount, minconf.to_i
     end
 
+
     def balance(minconf = 1)
       @client.request 'getbalance', self.name, minconf.to_i
     end

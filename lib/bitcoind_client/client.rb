@@ -8,6 +8,10 @@ module BitcoindClient
       request 'getbalance'
     end
 
+    def balance_from_account(fromaccount, minconf = 6)
+      request 'getbalance', fromaccount, minconf.to_i
+    end
+
     def move(fromaccount, toaccount, amount, minconf=1)
 
       request 'move', fromaccount, toaccount, amount, minconf.to_i
