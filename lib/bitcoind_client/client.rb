@@ -8,13 +8,23 @@ module BitcoindClient
       request 'getbalance'
     end
 
-    def balance_from_account(fromaccount, minconf = 6)
+    def balance_for_account(fromaccount, minconf = 6)
       request 'getbalance', fromaccount, minconf.to_i
+    end
+
+    def address_for_account(fromaccount)
+
+      request 'getaccountaddress', fromaccount
     end
 
     def move(fromaccount, toaccount, amount, minconf=1)
 
       request 'move', fromaccount, toaccount, amount, minconf.to_i
+    end
+
+    def send(fromaccount, bitcoinaddress, amount, minconf=1)
+      txn_id = request 'sendfrom', fromaccount, bitcoinaddress, amount, minconf.to_i
+      Transaction.new self, nil, txn_id
     end
 
     def accounts
