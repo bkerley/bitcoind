@@ -24,7 +24,6 @@ module BitcoindClient
 
     def send(fromaccount, bitcoinaddress, amount, minconf=1)
       txn_id = request 'sendfrom', fromaccount, bitcoinaddress, amount, minconf.to_i
-      Transaction.new self, nil, txn_id
     end
 
     def accounts
