@@ -27,8 +27,8 @@ module BitcoindClient
       body['params'] = args unless args.empty?
       logger.info body.to_s
       response_json = RestClient.post @endpoint, body.to_json
+      logger.info response_json.to_s
       response = JSON.parse response_json
-      logger.info response.to_s
       return response['result']
     end
 
