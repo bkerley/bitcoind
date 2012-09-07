@@ -34,7 +34,11 @@ module BitcoindClient
           pp response_json
           response = JSON.parse response_json
 
-          response['result'].present? ? return response['result'] : return response
+          if response['result'].present?
+            return response['result']
+          else
+            return response
+          end
 
         end
 
