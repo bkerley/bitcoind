@@ -56,7 +56,7 @@
       <file leaf-file-name="client.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/client.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="10" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
+            <state line="43" column="15" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,8 +113,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="138" />
-    <option name="y" value="48" />
+    <option name="x" value="105" />
+    <option name="y" value="85" />
     <option name="width" value="1127" />
     <option name="height" value="827" />
   </component>
@@ -346,7 +346,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="138" y="48" width="1127" height="827" extended-state="0" />
+    <frame x="105" y="85" width="1127" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -500,7 +500,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/client.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="10" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
+        <state line="43" column="15" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
