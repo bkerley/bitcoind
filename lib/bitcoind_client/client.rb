@@ -24,20 +24,19 @@ module BitcoindClient
 
     def request(method, *args)
 
-      begin
-
         body = { 'id'=>'jsonrpc', 'method'=>method}
         body['params'] = args unless args.empty?
         puts body.to_s
         response_json = RestClient.post @endpoint, body.to_json
-        puts response_json.to_s
-        response = JSON.parse response_json
-        return response['result']
 
-      rescue Exception => msg
+        if response_json.present?
+          puts "json response"
+          pp response_json
+          response = JSON.parse response_json
 
-        puts msg.to_s
-      end
+          response['result'].present? ? return response['result'] : return response
+
+        end
 
     end
 
