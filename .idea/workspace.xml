@@ -2,12 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/client.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/client.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bitcoind_client/version.rb" afterPath="$PROJECT_DIR$/lib/bitcoind_client/version.rb" />
     </list>
     <ignored path="bitcoind-client.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398627344630" ignored="false" />
-    <file path="/client.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398627407150" ignored="false" />
+    <file path="/client.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398641465117" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/Gemfile" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398632031810" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/config/bitcoind.yml" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398632031810" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/app/models/bitcoin_address.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398640968990" ignored="false" />
+    <file path="/bitcoin_address.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398638951760" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/lib/bitcoin.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398632031810" ignored="false" />
+    <file path="/bitcoin.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398628115919" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/app/models/user.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398639036448" ignored="false" />
+    <file path="/user.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398639013800" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/app/models/transaction.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398641326183" ignored="false" />
+    <file path="/transaction.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398641280647" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/db/schema.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398632031810" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/app/models/transaction_type.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398638246971" ignored="false" />
+    <file path="/transaction_type.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398631729134" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/db/seeds.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398638246971" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/app/views/landing/mixed.html.haml" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398632031810" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/app/models/currency.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398638246971" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/db/migrate/20140427204523_add_fields_to_transactions.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398632031810" ignored="false" />
+    <file path="/a.dummy" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398635855949" ignored="false" />
+    <file path="$PROJECT_DIR$/../btcjam/app/models/note.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398638246971" ignored="false" />
+    <file path="/note.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398632470864" ignored="false" />
+    <file path="/version.rb" changelist="e3dce99c-1ebf-46ed-a5df-13d4f0f02e1b" time="1398641489607" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +52,7 @@
       <file leaf-file-name="bitcoind_client.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/bitcoind_client.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="44" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+            <state line="10" column="20" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,7 +88,7 @@
       <file leaf-file-name="client.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/client.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="50" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
+            <state line="38" column="73" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,8 +159,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="256" />
-    <option name="y" value="22" />
+    <option name="x" value="551" />
+    <option name="y" value="91" />
     <option name="width" value="1127" />
     <option name="height" value="815" />
   </component>
@@ -364,14 +386,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="256" y="22" width="1127" height="815" extended-state="0" />
-    <editor active="false" />
+    <frame x="551" y="91" width="1127" height="815" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26456985" sideWeight="0.76462394" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26456985" sideWeight="0.76462394" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23537605" sideWeight="0.49676225" order="7" side_tool="true" content_ui="tabs" />
@@ -496,16 +518,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/transaction.rb">
+    <entry file="file://$PROJECT_DIR$/bitcoind_client.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="71" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
+        <state line="22" column="46" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitcoind_client.gemspec">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="46" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bitcoind_client.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="20" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/transaction.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="71" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -517,23 +553,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bitcoind_client.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="44" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/bitcoind_client/client.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="50" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="38" column="73" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

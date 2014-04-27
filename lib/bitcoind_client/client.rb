@@ -30,6 +30,10 @@ module BitcoindClient
       txn_id = request 'sendfrom', fromaccount, bitcoinaddress, amount, minconf.to_i
     end
 
+    def listtransactions(fromaccount, count, from)
+      request 'listtransactions', fromaccount, count, from
+    end
+
     def accounts
       balance_hash = request 'listaccounts'
       AccountHash.new self, balance_hash
