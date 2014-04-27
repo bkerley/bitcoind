@@ -17,6 +17,10 @@ module BitcoindClient
       request 'getaccountaddress', fromaccount
     end
 
+    def  address_by_account(fromaccount)
+      request 'getaddressesbyaccount', fromaccount
+    end
+
     def move(fromaccount, toaccount, amount, minconf=1)
 
       request 'move', fromaccount, toaccount, amount, minconf.to_i
