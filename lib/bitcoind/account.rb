@@ -17,8 +17,8 @@ module Bitcoind
       Transaction.new @clientm, self, txn_id
     end
 
-    def balance
-      @client.request 'getbalance', self.name
+    def balance(minconf = 1)
+      @client.request 'getbalance', self.name, minconf.to_i
     end
     memoize :balance
 
