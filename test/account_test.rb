@@ -4,7 +4,7 @@ class AccountTest < Test::Unit::TestCase
   context 'an Account' do
     setup do
       @client = stub
-      @acc = Bitcoind::Account.new @client, 'pi'
+      @acc = BitcoindClient::Account.new @client, 'pi'
     end
 
     should 'have name' do
@@ -12,7 +12,7 @@ class AccountTest < Test::Unit::TestCase
     end
 
     should 'have a short but useful inspect' do
-      assert_equal "#<Bitcoind::Account \"pi\" >", @acc.inspect
+      assert_equal "#<BitcoindClient::Account \"pi\" >", @acc.inspect
     end
 
     should 'ask the client for a balance' do
@@ -74,7 +74,7 @@ class AccountTest < Test::Unit::TestCase
       @txns = @acc.transactions
 
       @txns.each do |t|
-        assert_kind_of Bitcoind::Transaction, t
+        assert_kind_of BitcoindClient::Transaction, t
       end
       assert_equal ['310', '311', '312'], @txns.map(&:id)
     end

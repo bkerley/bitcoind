@@ -1,6 +1,6 @@
-module Bitcoind
+module BitcoindClient
   class Transaction
-    extend ActiveSupport::Memoizable
+
     attr_accessor :id, :account
     def initialize(client, account, id)
       @client = client
@@ -11,12 +11,12 @@ module Bitcoind
     def detail_hash
       @client.request 'gettransaction', self.id
     end
-    memoize :detail_hash
+
 
     def inspect
-      "#<Bitcoind::Transaction #{id} #{amount} to #{account.name} at #{time}>"
+      "#<BitcoindClient::Transaction #{id} #{amount} to #{account.name} at #{time}>"
     rescue RestClient::InternalServerError
-      "#<Bitcoind::Transaction #{id} UNCONFIRMED>"
+      "#<BitcoindClient::Transaction #{id} UNCONFIRMED>"
     end
 
     def amount
@@ -30,7 +30,7 @@ module Bitcoind
     def time
       Time.at detail_hash['time']
     end
-    memoize :time
+
 
     def confirmed?
       confirmations > 6

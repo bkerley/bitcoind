@@ -4,7 +4,7 @@ class AccountHashTest < Test::Unit::TestCase
   context 'an AccountHash' do
     setup do
       @client = stub
-      @ach = Bitcoind::AccountHash.new @client, ""=>0.0, "pi"=>3.14, "benjamin"=>100.0
+      @ach = BitcoindClient::AccountHash.new @client, ""=>0.0, "pi"=>3.14, "benjamin"=>100.0
     end
 
     should 'access accounts like a normal hash' do
@@ -19,7 +19,7 @@ class AccountHashTest < Test::Unit::TestCase
           with('getnewaddress', 'new test account').
           returns('xxxnewtestaddress')
 
-        @act = @ach.new 'new test account'
+        @act = @ach.new_account 'new test account'
         assert_equal 'new test account', @act.name
       end
     end

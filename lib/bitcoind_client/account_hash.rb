@@ -1,4 +1,4 @@
-module Bitcoind
+module BitcoindClient
   class AccountHash < Hash
     def initialize(client, balance_hash)
       @client = client
@@ -7,7 +7,7 @@ module Bitcoind
       end
     end
 
-    def new(name)
+    def new_account(name)
       addr = @client.request 'getnewaddress', name
 
       self[name] = Account.new @client, name
