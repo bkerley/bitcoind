@@ -12,6 +12,10 @@ module BitcoindClient
       request 'getbalance', fromaccount, minconf.to_i
     end
 
+    def dump_private_key(addr)
+      request 'dumpprivkey', addr
+    end
+
     def address_for_account(fromaccount)
 
       request 'getaccountaddress', fromaccount
@@ -32,6 +36,10 @@ module BitcoindClient
 
     def listtransactions(fromaccount, count, from)
       request 'listtransactions', fromaccount, count, from
+    end
+
+    def listaccounts
+      request 'listaccounts'
     end
 
     def accounts
